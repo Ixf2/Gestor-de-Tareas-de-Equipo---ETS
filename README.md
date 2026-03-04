@@ -115,7 +115,4 @@ Joana Ramírez y Juan Antonio
 Proyecto desarrollado como práctica de **Entornos de Desarrollo**  
 Ciclo Formativo: **DAM**
 
-
-iona la lista de tareas.
-
 Utiliza:
