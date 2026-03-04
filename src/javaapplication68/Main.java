@@ -5,12 +5,22 @@
 package javaapplication68;
 
 /**
- *
- * @author Joana
+ * Clase que ejecuta el programa de gestión de tareas.
+ * Menú interactivo para el usuario pueda añadir y listar tareas
+ * @author Joana y Juan Antonio
+ * @version 1.0
+ * @since 2026
+ * 
  */
 import java.util.Scanner;
 public class Main {
 
+   
+    /**
+     * Método principal para iniciar programa
+     * Menú gestión de tareas
+     * @param  args argumentos de línea de comandos
+    */
    public static void main(String[] args) {
 
        try (Scanner sc = new Scanner(System.in)) {
