@@ -8,20 +8,42 @@ package javaapplication68;
  *
  * @author Joana
  */
+import java.util.Scanner;
 public class Main {
 
-    public static void main(String[] args) {
+   public static void main(String[] args) {
 
-
-
-
-
-
-
-
-
-
-
+       try (Scanner sc = new Scanner(System.in)) {
+           GestorTareas gestor = new GestorTareas();
+           int opcion;
+           
+           do {
+               System.out.println("\n1. Añadir tarea");
+               System.out.println("2. Listar tareas");
+               System.out.println("0. Salir");
+               System.out.print("Elige una opción: ");
+               
+               opcion = sc.nextInt();
+               sc.nextLine();
+               
+               switch (opcion) {
+                   
+                   case 1 -> {
+                       System.out.print("Introduce la descripción de la tarea: ");
+                       String descripcion = sc.nextLine();
+                       gestor.añadirTarea(descripcion);
+                       System.out.println("Tarea añadida.");
+                   }
+                       
+                   case 2 -> gestor.mostrarTareas();
+                       
+                   case 0 -> System.out.println("Saliendo del programa.");
+                       
+                   default -> System.out.println("Opción no válida.");
+               }
+               
+           } while (opcion != 0);
+       }
     }
     
 }

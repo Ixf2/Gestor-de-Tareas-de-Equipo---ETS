@@ -23,7 +23,18 @@ public class GestorTareas {
         tareas.add(nueva);
     }
     
-    
+     public void mostrarTareas() {
+        for (int i = 0; i < tareas.size(); i++) {
+            Tarea t = tareas.get(i);
+
+            if (t.isCompletada()) {
+                System.out.println((i + 1) + ". " + t.getDescripcion() + " [COMPLETADA]");
+            } else {
+                System.out.println((i + 1) + ". " + t.getDescripcion() + " [PENDIENTE]");
+            }
+        }
+    }
+
     
     
     
