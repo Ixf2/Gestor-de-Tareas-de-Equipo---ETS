@@ -10,12 +10,15 @@ package javaapplication68;
  */
 public class GestorTareas {
     public String descripcion;
-    public String completada;
+    public boolean completada;
     
     public GestorTareas(String descripcion, String completada){
         this.descripcion = descripcion;
-        this.completada = completada;
+        this.completada = false;
     
     }
     
+    public void añadirTarea (String descripcion){
+        
+    }
 }
