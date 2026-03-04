@@ -8,17 +8,24 @@ package javaapplication68;
  *
  * @author Joana
  */
+import java.util.ArrayList;
+
 public class GestorTareas {
-    public String descripcion;
-    public boolean completada;
-    
-    public GestorTareas(String descripcion, String completada){
-        this.descripcion = descripcion;
-        this.completada = false;
-    
+
+    private ArrayList<Tarea> tareas;
+
+    public GestorTareas() {
+        tareas = new ArrayList<>();
+    }
+
+    public void añadirTarea(String descripcion) {
+        Tarea nueva = new Tarea(descripcion);
+        tareas.add(nueva);
     }
     
-    public void añadirTarea (String descripcion){
-        
-    }
+    
+    
+    
+    
+    
 }
